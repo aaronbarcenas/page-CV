@@ -1,0 +1,99 @@
+
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.home {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include m.tablet {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+}
+
+.home-content {
+  margin-top: 4rem;
+
+  h1 {
+    margin: 1rem 0;
+    font-family: v.$wind_font;
+    font-size: 6.5rem;
+    width: 100%;
+    text-align: center;
+    @include m.tablet {
+      text-align: left;
+    }
+    background: -webkit-linear-gradient( left, #06659b, #066, #0ee, #88fff5, #06659b, #066, #88fff5 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  &:hover {
+    background: -webkit-linear-gradient( right, #00ff00, #ff4500, #1e90ff,  #800080, #ffff00 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: v.$blanco;
+  } 
+    
+  }
+
+  h3 {
+    margin: 1rem 0;
+    font-weight: 400;
+    font-family: v.$pop_font;
+    color: v.$blanco;
+    text-align: center;
+    @include m.tablet {
+      text-align: left;
+    }
+  }
+
+  h4 {
+    margin: 1rem 0;
+    font-weight: 300;
+    font-family: v.$pop_font;
+    color: v.$blanco;
+    font-size: 4.1rem;
+    text-align: center;
+    @include m.tablet {
+      text-align: left;
+    }
+  }
+
+  span {
+    color: v.$cyan;
+    font-family: v.$lato_font;
+  }
+
+  p {
+    margin: 1.3rem 0;
+    color: v.$blanco;
+    text-align: center;
+    @include m.tablet {
+      text-align: left;
+    }
+  }
+
+}
+
+.home-sci {
+  margin-top: 1.8rem;
+  text-align: center;
+  @include m.tablet {
+    text-align: left;
+  }
+  a {
+    color: v.$cyan;
+    font-size: 3.8rem;
+    margin-right: 1.8rem;
+  }
+  
+}
+
+.home-image img {
+  border-radius: 50%;
+}

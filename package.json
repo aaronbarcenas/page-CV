@@ -1,0 +1,35 @@
+{
+  "name": "page-cv",
+  "version": "1.0.0",
+  "description": "Page CV personal",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronbarcenas/page-CV.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp",
+    "Javascript"
+  ],
+  "author": "Aaron Barcenas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaronbarcenas/page-CV/issues"
+  },
+  "homepage": "https://github.com/aaronbarcenas/page-CV#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.8"
+  },
+  "dependencies": {
+    "typed.js": "^2.1.0"
+  }
+}
