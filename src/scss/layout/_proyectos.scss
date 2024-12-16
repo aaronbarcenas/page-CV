@@ -1,0 +1,53 @@
+
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+section {
+  @include m.contenedor
+}
+
+.titulo {
+  text-align: center;
+}
+
+.courses__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+article {
+  background-color: v.$card-bg;
+  text-align: center;
+  border: .1rem solid transparent;
+
+  img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 23rem;
+  }
+
+  h4 {
+    font-family: v.$pop_font;
+    font-weight: 400;
+    color: v.$cyan;
+    padding: 0 2.5rem;
+    font-size: 3rem;
+    margin: 3rem 0 0 0;
+  }
+
+  p {
+    font-family: v.$lato_font;
+    color: v.$blanco;
+    padding: 0 2.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  &:hover {
+    background: transparent;
+    border: .1rem solid v.$cyan;
+  }
+}
+
